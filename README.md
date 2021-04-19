@@ -5,7 +5,7 @@ This project was bootstrapped with Create React App.
 ## Available Scripts
 
 In the project directory, you can run:
-Open [car-repair-service-11880.web.app] to view
+Open [https://car-repair-service-11880.web.app] to view
 
 ## About the project 
 
