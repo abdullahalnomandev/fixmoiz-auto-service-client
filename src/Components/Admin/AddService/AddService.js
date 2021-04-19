@@ -18,7 +18,7 @@ const AddService = () => {
         }
 
         console.log("add Product", addService);
-        fetch('https://whispering-plains-30606.herokuapp.com/addService', {
+        fetch('http://localhost:5000/addService', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(addService)

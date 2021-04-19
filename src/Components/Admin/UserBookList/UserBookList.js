@@ -13,13 +13,13 @@ const UserBookList = () => {
 
 
     useEffect(() => {
-        fetch('https://whispering-plains-30606.herokuapp.com/getAllBookList')
+        fetch('http://localhost:5000/getAllBookList')
             .then(res => res.json())
             .then(data => setUserBookList(data))
     }, [])
 
     useEffect(() => {
-        fetch('https://whispering-plains-30606.herokuapp.com/adminList', {
+        fetch('http://localhost:5000/adminList', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({ email: logInUser.email })

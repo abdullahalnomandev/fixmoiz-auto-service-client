@@ -34,7 +34,7 @@ const Review = () => {
             companyName: data.companyName
         }
         console.log(reviewData);
-        fetch('https://whispering-plains-30606.herokuapp.com/addReview', {
+        fetch('http://localhost:5000/addReview', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(reviewData)

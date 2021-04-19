@@ -7,7 +7,7 @@ const Manage = () => {
     const [servicesData, setServicesData] = useState([]);
     
     useEffect(() => {
-        fetch('https://whispering-plains-30606.herokuapp.com/getAllServices')
+        fetch('http://localhost:5000/getAllServices')
             .then(res => res.json())
             .then(data => setServicesData(data))
     }, [])

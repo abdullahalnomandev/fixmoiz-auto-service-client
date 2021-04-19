@@ -9,7 +9,7 @@ const BookingList = () => {
     const [logInUser, setLogInUser] = useContext(UseContext);
 
     useEffect(() => {
-        fetch(`https://whispering-plains-30606.herokuapp.com/getBookingList?email=${logInUser.email}`)
+        fetch(`http://localhost:5000/getBookingList?email=${logInUser.email}`)
             .then(res => res.json())
             .then(data => setBookingList(data))
     }, [])

@@ -12,7 +12,7 @@ const Booking = () => {
     const { _id } = useParams();
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('https://whispering-plains-30606.herokuapp.com/getAllServices')
+        fetch('http://localhost:5000/getAllServices')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
@@ -20,7 +20,7 @@ const Booking = () => {
     const [logInUser, setLogInUser] = useContext(UseContext);
     const [bookingData, setBookingData] = useState(null);
     const { register, handleSubmit, formState: { errors } } = useForm()
-        ;
+    ;
 
     const singleServices = services.find(service => service._id == _id);
 
@@ -38,7 +38,7 @@ const Booking = () => {
             status: 'Pending'
 
         }
-        fetch('https://whispering-plains-30606.herokuapp.com/addBookingList', {
+        fetch('http://localhost:5000/addBookingList', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(orderDetails)
@@ -53,9 +53,10 @@ const Booking = () => {
     }
 
     return (
+
         <section className="container-fluid row ">
             <SideBar />
-            <div className="col-md-10 bt-secondary ">
+            <div className="col-md-10 bt-secondary">
                 <div style={{ display: bookingData ? 'none' : 'block' }} >
 
                     <form style={{ maxWidth: '800px' }} className="mt-3 ml-5" onSubmit={handleSubmit(onSubmit)}>
@@ -71,7 +72,7 @@ const Booking = () => {
                 </div>
                 <div style={{ display: bookingData ? 'block' : 'none' }} className="payment">
                     <h5 className="text-primary mt-3 mb-4 ml-5">PAY WITH VISA CARD</h5>
-                    <img style={{ maxWidth: '100px' }} className="img-fluid ml-5 mb-5 " src={visa} alt="" />
+                    <img style={{maxWidth:'100px'}} className="img-fluid ml-5 mb-5 " src={visa} alt="" />
                     <ProcessPayment handlePayment={handlePaymentSuccess} />
 
                 </div>

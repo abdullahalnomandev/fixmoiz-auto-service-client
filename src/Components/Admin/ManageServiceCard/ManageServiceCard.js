@@ -12,7 +12,7 @@ const ManageServiceCard = (props) => {
 
         setHide(event.target.parentNode);
 
-        fetch(`https://whispering-plains-30606.herokuapp.com/delete/${id}`, {
+        fetch(`http://localhost:5000/delete/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
