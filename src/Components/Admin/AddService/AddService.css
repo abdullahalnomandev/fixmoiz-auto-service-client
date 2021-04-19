@@ -1,0 +1,27 @@
+.inputDetails{
+
+    background-color: #ddd !important;
+    min-height: 100vh;
+    padding: 20px;
+    max-width: 600px;
+    height: 800px !important;
+    margin: auto;
+
+}
+input{
+    padding: 8px;
+    width: 265px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.btnButton{
+    background-color: green !important;
+    color: white !important;
+    font-size: 17px !important;
+    width: 134px !important;
+    margin-top: 27px !important;
+}
+.inputDetails p{
+    font-size: 17px;
+    font-weight: 600;
+}

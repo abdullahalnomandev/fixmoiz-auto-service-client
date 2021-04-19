@@ -1,0 +1,14 @@
+.service-description-card{
+    border-radius:10px !important;
+   box-shadow:  6px 5px 14px #ddd;
+   cursor: pointer;
+}
+.service-description-card img{
+    width: 100px;
+    padding: 10px;
+    margin: auto;
+}
+.service-description-card:hover{
+   box-shadow: 12px 30px 19px 0px #ddd;
+   transition: .4s;
+}

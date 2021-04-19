@@ -1,0 +1,27 @@
+td{
+    padding: 17px 0px;
+    width: 270px;
+    border-bottom: 1px solid black;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 10px;
+    
+}
+table{
+    border-collapse: collapse;
+    
+}
+
+table thead tr th{
+    background-color: #ddd;
+    padding:20px 0px;
+    padding-left: 10px;
+}
+.deleteIcon{
+    cursor: pointer;
+    color: red;
+
+}
+/* .col-md-10{
+    margin-left: -1.2%;
+} */

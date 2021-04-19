@@ -1,0 +1,7 @@
+.book-card{
+    box-shadow: 10px 10px 14px 11px #ddd;
+    border-radius: 10px;
+}
+.book-card:hover{
+    background-color: #e5ece5;
+}
